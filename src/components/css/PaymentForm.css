@@ -1,0 +1,26 @@
+.container__form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.container__number, .container__name, .container__expiry, .container__cvc {
+  margin-top: 3px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.container__input{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.container__expiry {
+  margin-right: 15px;
+  width: 50%;
+}
+.container__cvc {
+  margin-left: 15px;
+  width: 50%;
+}
+
