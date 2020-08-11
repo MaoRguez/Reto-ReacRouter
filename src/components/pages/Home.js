@@ -63,8 +63,8 @@ export const Home = () => {
           </div>
       </div>
     </section>
-    <div className="containerTransaction">
-      <div className="containerTransaction__element"></div>
+    <div className="container">
+      <div className="container"></div>
     </div>
   </Fragment>
 };

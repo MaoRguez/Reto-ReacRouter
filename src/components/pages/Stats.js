@@ -11,7 +11,9 @@ const SIZE = '32px';
 export const Stats = () => {
   return (
     <Fragment>
-      <h2>Stats</h2>
+      <div className="title">
+        <h2>Stats</h2>
+      </div>
       <div className="containerStats">
         <div className="containerStats__container">
           <div className="containerStats__element">

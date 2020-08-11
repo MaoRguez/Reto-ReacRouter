@@ -2,18 +2,22 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { DiJsBadge, DiReact, DiHtml5, DiCss3 } from "react-icons/di";
 
+import '../css/Stats.css';
+
 const SIZE = '32px';
 
 export const Transactions = () => {
   return (
     <Fragment>
-      <h1>Transactions</h1>;
-      <div>
-        <Link to='/'>All</Link>
-        <Link to='/stats'>Received</Link>
-        <Link to='/transactions'>Spend</Link>
+      <div  className="containerTransactions">
+        <h2>Transactions</h2>
+        <div className="btn-radius">
+          <Link to='/'>All</Link>
+          <Link to='/stats'>Received</Link>
+          <Link to='/transactions'>Spend</Link>
+        </div>
+        <h2>Today</h2>
       </div>
-      <h2>Today</h2>
       <div className="containerTransaction">
         <div className="containerTransaction__element">
           <DiJsBadge size={SIZE} color='#fff48f' className="containerTransaction__element-icon-js" />
@@ -50,7 +54,7 @@ export const Transactions = () => {
           <p className="containerTransaction__element-date">12:45</p>
         </div>
       </div>
-      <h2>Yesterday</h2>
+      <h2 className="subtitle">Yesterday</h2>
       <div className="containerTransaction">
         <div className="containerTransaction__element">
           <DiHtml5 size={SIZE} color='#ff5722' className="containerTransaction__element-icon-js" />
